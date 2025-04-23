@@ -1,3 +1,4 @@
+# meken thama Automation part aka venne
 name: Build and Push Docker image to Docker Hub
 
 on: push
@@ -26,5 +27,5 @@ jobs:
           context: ./
           push: true
           tags: |
-                kalharacodes/docker-automation:${{ env.SHORT_SHA }}
-                kalharacodes/docker-automation:latest
+                malishashavinda/docker-automation/:${{ env.SHORT_SHA }}
+                malishashavinda/docker-automation:latest
